@@ -2,6 +2,7 @@ package com.example.test_recyclerview_pager_3;
 
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
         rv.setLayoutManager(mLayoutManager);
 
+        Log.d("logcheck","" + pagerList.size() + " " + movieList.size());
         ProductCardAdapter mCardAdapter = new ProductCardAdapter(getSupportFragmentManager(), pagerList, movieList);
         rv.setAdapter(mCardAdapter);
     }

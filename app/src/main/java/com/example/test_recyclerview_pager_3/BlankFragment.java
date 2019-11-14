@@ -39,8 +39,8 @@ public class BlankFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_blank, container, false);
-        TextView tv = v.findViewById(R.id.textview);
+        View v = inflater.inflate(R.layout.image_type, container, false);
+        TextView tv = v.findViewById(R.id.textView);
         tv.setText(title);
         ImageView iv = v.findViewById(R.id.imageView);
         iv.setImageResource(resourceId);
